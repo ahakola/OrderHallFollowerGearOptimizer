@@ -36,3 +36,7 @@ externals:
 		tag: latest
 
 enable-nolib-creation: no
+
+ignore:
+    - LICENSE.md
+    - README.md
