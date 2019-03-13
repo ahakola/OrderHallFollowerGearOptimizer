@@ -506,7 +506,8 @@ function OHFGO:Init()
 	
 	self.waiting = false;
 
-	local b = CreateFrame("Button", "OHFGOApplyButton", self.frame, "ItemButtonTemplate, SecureActionButtonTemplate")
+	--local b = CreateFrame("Button", "OHFGOApplyButton", self.frame, "ItemButtonTemplate, SecureActionButtonTemplate")
+	local b = CreateFrame("ItemButton", "OHFGOApplyButton", self.frame, "SecureActionButtonTemplate") -- ItemButtonTemplate was replaced by ItemButton-widget in 8.1.5
 	b:SetAttribute("type", "macro")
 	b:SetSize(40, 40);
 	b:SetPoint("BOTTOM", 0, 60);
