@@ -7,6 +7,6 @@ ns[2] = locale;
 
 OrderHallFollowerGearOptimizer = ns;
 
-engine.Title = GetAddOnMetadata(addon, "Title")
-engine.Version = GetAddOnMetadata(addon, "Version")
+engine.Title = C_AddOns.GetAddOnMetadata(addon, "Title")
+engine.Version = C_AddOns.GetAddOnMetadata(addon, "Version")
 
