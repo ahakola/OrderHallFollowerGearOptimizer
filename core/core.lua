@@ -501,7 +501,8 @@ function OHFGO:Init()
 	local button = CreateFrame('Button', 'OrderHallFollowerGearOptimizerButton', tab, 'UIPanelButtonTemplate');
 	button:SetSize(140, 22);
 	button:SetText(L["Optimize"]);
-	button:SetPoint("TOP", OrderHallMissionFrameFollowersListScrollFrame, "BOTTOM", 0, -40);
+	--button:SetPoint("TOP", OrderHallMissionFrameFollowersListScrollFrame, "BOTTOM", 0, -40);
+	button:SetPoint("TOP", OrderHallMissionFrame.FollowerList.ScrollBox, "BOTTOM", 0, -40); -- Fix to make the addon work in 11.2.5
 	button:SetScript("OnClick", function(self, button) OHFGO:OpenFrame() end);
 	
 	self.waiting = false;
