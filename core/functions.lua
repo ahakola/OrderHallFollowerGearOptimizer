@@ -45,7 +45,8 @@ function OHFGO:DoesFollowerHaveSetItem(followerID)
 end
 
 function OHFGO:CollectCounterMechanicCounts()
-	local followers = C_Garrison.GetFollowers(LE_FOLLOWER_TYPE_GARRISON_7_0);
+	--local followers = C_Garrison.GetFollowers(LE_FOLLOWER_TYPE_GARRISON_7_0);
+	local followers = C_Garrison.GetFollowers(Enum.GarrisonFollowerType.FollowerType_7_0_GarrisonFollower); -- Value: 4
 
 	if (not self.counters) then self.counters = {}; end
 
@@ -53,7 +54,8 @@ function OHFGO:CollectCounterMechanicCounts()
 		local follower = followers[i];
 		local followerID = follower.followerID;
 
-		if (follower.level >= 110 and follower.isCollected and not follower.isTroop) then
+		--if (follower.level >= 110 and follower.isCollected and not follower.isTroop) then
+		if (follower.isMaxLevel and follower.isCollected and not follower.isTroop) then
 			local status = C_Garrison.GetFollowerStatus(followerID);
 
 			--if (not status or (not (status == GARRISON_FOLLOWER_INACTIVE or status == GARRISON_FOLLOWER_ON_MISSION))) then
@@ -110,7 +112,8 @@ function OHFGO:GetTargetFollowers(targetIlvl)
 end
 
 function OHFGO:CalculateWeights()
-	local followers = C_Garrison.GetFollowers(LE_FOLLOWER_TYPE_GARRISON_7_0);
+	--local followers = C_Garrison.GetFollowers(LE_FOLLOWER_TYPE_GARRISON_7_0);
+	local followers = C_Garrison.GetFollowers(Enum.GarrisonFollowerType.FollowerType_7_0_GarrisonFollower); -- Value: 4
 
 	if (not self.counters) then
 		self:CollectCounterMechanicCounts();
