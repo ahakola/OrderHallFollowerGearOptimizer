@@ -38,7 +38,7 @@ You may now submit translations via CurseForge!
 Snapshotted on 2015.07.15 - No new releases or other changes after that, except for the download numbers.
 
 Name | Release type | Status | Date | Game version | Filename | Downloads
----: | :---: | :---: | :---: | ---: | ---: | ---:
+---: | :---: | :---: | :---: | :---: | :--- | ---:
 1.33 | Release | Normal | Jul 09, 2015 | 6.2.0 | FollowerGearOptimizer-1.33.zip | 16,197
 r68 | Alpha | Normal | Jul 09, 2015 | 6.2.0 | FollowerGearOptimizer-r68.zip | 2
 1.32 | Release | Normal | Feb 28, 2015 | 6.1.0 | FollowerGearOptimizer-1.32.zip | 47,913
@@ -147,7 +147,7 @@ Please disable TradeSkillMaster before copy&pasting Lua errors to me, it makes t
 Snapshotted on 2026.08.04 - New releases still to come?
 
 Type | Name | Size | Uploaded | Game Version | Downloads | Status
-:---: | ---: | :---: | :---: | ---: | ---: | :---:
+:---: | ---: | :---: | :---: | :---: | ---: | :---:
 R | 1.25 | 156.67 KB | Jul 1, 2026 | 12.0.7 | 324 | Approved
 R | 1.24 | 156.67 KB | Jun 15, 2026 | 12.0.5 | 292 | Approved
 R | 1.23 | 156.67 KB | Apr 18, 2026 | 12.0.1 | 412 | Approved
